@@ -14,7 +14,7 @@ class Game:
         pygame.display.set_caption("Game Pygame")
 
         # charger la map
-        tmx_data = pytmx.util_pygame.load_pygame('map.tmx')
+        tmx_data = pytmx.util_pygame.load_pygame('assets/map/map.tmx')
         map_data = pyscroll.data.TiledMapData(tmx_data)
         map_layer = pyscroll.orthographic.BufferedRenderer(map_data, self.screen.get_size())
         map_layer.zoom = 2
@@ -27,7 +27,9 @@ class Game:
         self.walls = []
 
         for obj in tmx_data.objects:
-            if obj.type == "collision":
+            print(obj)
+            if obj.name == "collision":
+                print(obj.x, obj.y, obj.width, obj.height)
                 self.walls.append(pygame.Rect(obj.x, obj.y, obj.width, obj.height))
 
         # dessiner le groupe de calque
@@ -62,7 +64,6 @@ class Game:
 
         # FPS
         clock = pygame.time.Clock()
-
 
         # boucle de jeu 
         running = True

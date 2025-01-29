@@ -19,7 +19,7 @@ Link : https://github.com/Arnaudb78/first_pygame
 ## Create venv
 
 - python -m venv venv
-- source venv/bin/activate
+- source venv/bin/activate (mac)
 
 ### Install dependencies
 

@@ -22,15 +22,6 @@ env/
 # Fichiers de log
 *.log
 
-# Fichiers spécifiques à Pygame
-*.bmp
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.ogg
-*.wav
-*.mp3
 
 # Autres fichiers générés
 *.db
