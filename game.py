@@ -1,3 +1,4 @@
+import time
 import pygame
 import pytmx
 import pyscroll
@@ -39,19 +40,21 @@ class Game:
     def handle_input(self):
         pressed = pygame.key.get_pressed()
 
-        if(pressed[pygame.K_UP]):
+        if(pressed[pygame.K_w]):
             self.player.move_up()
             self.player.change_animation('up')
-        elif(pressed[pygame.K_DOWN]):
+        elif(pressed[pygame.K_s]):
             self.player.move_down()
             self.player.change_animation('down')
-        elif(pressed[pygame.K_LEFT]):
+        elif(pressed[pygame.K_a]):
             self.player.move_left()
             self.player.change_animation('left')
-        elif(pressed[pygame.K_RIGHT]):
+        elif(pressed[pygame.K_d]):
             self.player.move_right()
             self.player.change_animation('right')
-
+        elif(pressed[pygame.K_SPACE]):
+            self.player.move_back()
+        
     def update(self):
         self.group.update()
 
