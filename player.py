@@ -17,7 +17,7 @@ class Player(pygame.sprite.Sprite):
         }
 
         self.feet = pygame.Rect(0, 0, self.rect.width * 0.5, 12) # se bind sur les pieds du player
-        self.old_position = self.position.copy()
+        self.old_position = self.position.copy() # duplique les informations de position
         self.speed = 3
 
     def save_location(self): self.old_position = self.position.copy()
@@ -33,8 +33,6 @@ class Player(pygame.sprite.Sprite):
     def move_up(self): self.position[1] -= self.speed
 
     def move_down(self): self.position[1] += self.speed
-
-    def move_jump(self): self.position[1]
 
     def update(self):
         self.rect.topleft = self.position

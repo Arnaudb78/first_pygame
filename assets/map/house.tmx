@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="10">
+ <tileset firstgid="1" source="house.tsx"/>
+ <tileset firstgid="325" source="nature.tsx"/>
+ <layer id="1" name="background" width="10" height="10">
+  <data encoding="csv">
+487,487,487,487,487,487,487,487,487,487,
+531,532,531,532,531,532,531,532,531,532,
+491,492,491,492,491,492,491,492,491,492,
+531,532,531,532,531,532,531,532,531,532,
+491,492,491,492,491,492,491,492,491,492,
+531,532,531,532,531,532,531,532,531,532,
+491,492,491,492,491,492,491,492,491,492,
+531,532,531,532,531,532,531,532,531,532,
+491,492,491,492,491,492,491,492,491,492,
+531,532,531,532,531,532,531,532,531,532
+</data>
+ </layer>
+ <layer id="3" name="walls" width="10" height="10">
+  <data encoding="csv">
+487,487,487,487,487,487,487,487,487,487,
+487,0,0,0,0,0,0,0,0,487,
+487,0,0,0,0,0,0,0,0,487,
+487,0,0,0,487,411,0,0,0,487,
+487,0,0,0,487,487,0,0,0,487,
+487,0,0,0,0,0,0,0,0,487,
+487,0,0,0,0,0,0,0,0,487,
+487,329,330,0,0,0,0,0,0,487,
+487,369,370,0,0,0,0,0,0,487,
+487,487,487,487,487,487,487,487,487,487
+</data>
+ </layer>
+ <objectgroup id="4" name="objects">
+  <object id="1" name="collision" x="0.333333" y="0.666667" width="159.333" height="15.3333"/>
+  <object id="2" name="collision" x="0.333333" y="16" width="15.3333" height="144"/>
+  <object id="3" name="collision" x="16.3333" y="143.333" width="143.667" height="16.3333"/>
+  <object id="4" name="collision" x="144.667" y="16.3333" width="15" height="125.667"/>
+  <object id="5" name="collision" x="64.6667" y="49" width="15.6667" height="30.6667"/>
+  <object id="6" name="collision" x="81.6667" y="64.6667" width="13.6667" height="15"/>
+  <object id="8" name="exit_house" x="20" y="107.667" width="36.6667" height="34"/>
+  <object id="9" name="spawn_house" x="75.6667" y="115.667">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
